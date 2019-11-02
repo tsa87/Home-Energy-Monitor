@@ -14,11 +14,11 @@ cents_per_hr = curr_usage["cents_per_hr"]
 
 
 main_menu = [
-            [sg.Text("Dashboard")],
+            [sg.Text("Dashboard",font=("Helvetica", 20))],
             [sg.Text('{} {}!'.format(greetings, first_name))],
             [sg.Text('Your current usage level is {}'.format(curr_level))],
             [sg.Text('Enter something on Row 2'), sg.InputText()],
-            [sg.Button('Ok'), sg.Button('Cancel')] ]
+            [sg.Button('Day'), sg.Button('Week')] ]
 
 
 # Create the Window
