@@ -1,7 +1,5 @@
 # Home-Energy-Monitor
 
-# SFU-Engineering-Competition
-
 ### Getting Started
 1. Clone the project 
 ```
