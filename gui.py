@@ -11,15 +11,17 @@ curr_usage_kW = curr_usage["usage_kW"]
 curr_level = curr_usage["level"]
 cents_per_hr = curr_usage["cents_per_hr"]
 
-layout = [  [sg.Text('Hi {}'.format(first_name))],
+main_menu = [  [sg.Text('Hi {}'.format(first_name))],
             [sg.Text('Your current usage level is {}'.format(curr_level))],
             [sg.Text('Enter something on Row 2'), sg.InputText()],
             [sg.Button('Ok'), sg.Button('Cancel')] ]
 
-
+we
 
 # Create the Window
-window = sg.Window('Window Title', layout)
+window = sg.Window('Window Title', main_menu)
+
+
 # Event Loop to process "events" and get the "values" of the inputs
 while True:
     event, values = window.read()
