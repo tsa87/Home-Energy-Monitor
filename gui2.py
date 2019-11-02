@@ -1,7 +1,7 @@
 import PySimpleGUI as sg
 import plotly.graph_objects as go
-from api_get_data import get_curr_usage
-from api_get_data import get_week_usage
+from api_get_data2 import get_curr_usage
+from api_get_data2 import get_week_usage
 from test_ground import get_time
 
 # All the stuff inside your window.
