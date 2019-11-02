@@ -1,9 +1,10 @@
 import PySimpleGUI as sg
 from api_get_data import get_curr_usage
-
+from test_ground import get_time
 # All the stuff inside your window.
 
 curr_usage = get_curr_usage()
+greetings = get_time()
 
 first_name = curr_usage["user"]["first_name"]
 last_name = curr_usage["user"]["last_name"]
@@ -11,12 +12,14 @@ curr_usage_kW = curr_usage["usage_kW"]
 curr_level = curr_usage["level"]
 cents_per_hr = curr_usage["cents_per_hr"]
 
-main_menu = [  [sg.Text('Hi {}'.format(first_name))],
+
+main_menu = [
+            [sg.Text("Dashboard")],
+            [sg.Text('{} {}!'.format(greetings, first_name))],
             [sg.Text('Your current usage level is {}'.format(curr_level))],
             [sg.Text('Enter something on Row 2'), sg.InputText()],
             [sg.Button('Ok'), sg.Button('Cancel')] ]
 
-we
 
 # Create the Window
 window = sg.Window('Window Title', main_menu)
