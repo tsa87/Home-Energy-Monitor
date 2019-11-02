@@ -2,6 +2,24 @@
 
 # SFU-Engineering-Competition
 
+### Getting Started
+1. Clone the project 
+```
+git clone https://github.com/tsa87/Home-Energy-Monitor.git
+```
+2. Install the prerequisites
+```
+pip install plotly
+pip install PySimpleGUI
+pip install requests
+pip install datetime
+```
+4. Run the demo
+```
+python3 gui.py
+```
+
+
 This is a program that helps the user monitor their electricity usage. <Br />
 <Br />
 
